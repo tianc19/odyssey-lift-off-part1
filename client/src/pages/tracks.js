@@ -28,7 +28,6 @@ const TRACKS = gql`
 const Tracks = () => {
   const {loading, error, data} = useQuery(TRACKS);
 
-  // title, thumbnail, author, length, modulesCount
   return (
     <Layout grid>
       <QueryResult error={error} loading={loading} data={data}>
